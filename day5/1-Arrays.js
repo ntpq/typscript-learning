@@ -1,0 +1,14 @@
+var numbers = [1, 2, 3, 4];
+var names = ["IQ", "BOB", "MUSK"];
+console.log('numbers,names :>> ', numbers, names);
+numbers.push(9);
+console.log('numbers :>> ', numbers);
+names.pop();
+console.log('names :>> ', names);
+numbers.shift();
+names.unshift("WANG");
+console.log('numbers,names :>> ', numbers, names);
+var double = numbers.map(function (value, index) { return value * 2; });
+console.log('numbers,double :>> ', numbers, double);
+var isEven = numbers.filter(function (value, index) { return value % 2 == 0; });
+console.log('isEven :>> ', isEven);
